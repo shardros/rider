@@ -56,3 +56,7 @@ fabric.properties
 
 # Editor-based Rest Client
 .idea/httpRequests
+.idea/rider.iml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/modules.xml
+.idea/vcs.xml
