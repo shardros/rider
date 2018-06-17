@@ -1,6 +1,4 @@
 ---
-title: RoboCon
-subtitle: '2019'
 image: /img/everyone.jpg
 blurb:
   heading: What is RoboCon
