@@ -1,10 +1,10 @@
-.about {
+.about.homepage{
     align-self: center;
     text-align: center;
     margin: 10%;
 }
 
-.sponsors, .sign-up {
+.sponsors.homepage, .sign-up.homepage {
     height: 90%;
     align-self: end;
     text-align: center;
@@ -13,7 +13,7 @@
     background-color: #F5F5F5;
 }
 
-.tshirt, .death-kiss {
+.tshirt.homepage, .death-kiss.homepage {
     align-self: start;
     text-align: center;
     margin: 0 5% 5% 5%;
@@ -21,28 +21,28 @@
     background-color: #F5F5F5;
 }
 
-.faq {
+.faq.homepage {
     background-color: #F5F5F5;
 }
 
-.faq, .contact {
+.faq.homepage, .contact.homepage {
     text-align: center;
     padding: 5%;
     margin: 2.5%;
 }
 
-.dash img{
+.dash.homepage img{
     width: 90%;
     border-radius:50%;
     margin: 5%;
 }
 
-.tshirt img {
+.tshirt.homepage img {
     border-radius:50%;
     padding-bottom: 5%;
 }
 
-.death-kiss img{
+.death-kiss.homepage img{
     border-radius:50%;
     padding-bottom: 5%;
 }
@@ -52,7 +52,7 @@
 @supports (display: grid) {
 
     @media screen and (min-width: 800px) {
-        .grid {
+        .grid.homepage {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr auto;
@@ -66,39 +66,39 @@
         }
     }
 
-    .main-image {
+    .main-image.homepage {
         grid-area: main-image;
     }
 
-    .about {
+    .about.homepage {
         grid-area: about;
     }
 
-    .dash {
+    .dash.homepage {
         grid-area: dash-img;
     }
 
-    .sponsors {
+    .sponsors.homepage {
         grid-area: sponsors;
     }
 
-    .tshirt {
+    .tshirt.homepage {
         grid-area: tshirt;
     }
 
-    .sign-up {
+    .sign-up.homepage {
         grid-area: sign-up;
     }
 
-    .death-kiss {
+    .death-kiss.homepage {
         grid-area: death-kiss;
     }
 
-    .faq {
+    .faq.homepage {
         grid-area: faq;
     }
 
-    .contact {
+    .contact.homepage {
         grid-area: contact;
     }
 }
