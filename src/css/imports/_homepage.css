@@ -1,0 +1,104 @@
+.about {
+    align-self: center;
+    text-align: center;
+    margin: 10%;
+}
+
+.sponsors, .sign-up {
+    height: 90%;
+    align-self: end;
+    text-align: center;
+    margin: 5% 5% 0 5%;
+    padding: 0 5% 0 5%;
+    background-color: #F5F5F5;
+}
+
+.tshirt, .death-kiss {
+    align-self: start;
+    text-align: center;
+    margin: 0 5% 5% 5%;
+    padding: 0 5% 5% 5%;
+    background-color: #F5F5F5;
+}
+
+.faq {
+    background-color: #F5F5F5;
+}
+
+.faq, .contact {
+    text-align: center;
+    padding: 5%;
+    margin: 2.5%;
+}
+
+.dash img{
+    width: 90%;
+    border-radius:50%;
+    margin: 5%;
+}
+
+.tshirt img {
+    border-radius:50%;
+    padding-bottom: 5%;
+}
+
+.death-kiss img{
+    border-radius:50%;
+    padding-bottom: 5%;
+}
+
+
+
+@supports (display: grid) {
+
+    @media screen and (min-width: 800px) {
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr auto;
+            grid-template-areas:
+                    "main-image main-image"
+                    "about dash-img"
+                    "sponsors sign-up"
+                    "tshirt death-kiss"
+                    "faq faq"
+                    "contact contact";
+        }
+    }
+
+    .main-image {
+        grid-area: main-image;
+    }
+
+    .about {
+        grid-area: about;
+    }
+
+    .dash {
+        grid-area: dash-img;
+    }
+
+    .sponsors {
+        grid-area: sponsors;
+    }
+
+    .tshirt {
+        grid-area: tshirt;
+    }
+
+    .sign-up {
+        grid-area: sign-up;
+    }
+
+    .death-kiss {
+        grid-area: death-kiss;
+    }
+
+    .faq {
+        grid-area: faq;
+    }
+
+    .contact {
+        grid-area: contact;
+    }
+}
