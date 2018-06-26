@@ -1,94 +1,80 @@
 {{ define "main" }}
 
+{{ partial "jumbotron" (dict "imageUrl" .Params.image) }}
 
-<div class="grid homepage">
+{{ partial "text-and-image" (dict "heading" .Params.about.heading "text" .Params.about.text "buttonText" "Read more" "buttonLink" "/about") }}
 
-    <div class="main-image homepage">
-        <img src="http://temple-rider.netlify.com/media/everyone.jpg" alt="everyone">
-    </div>
+<div class="dash homepage">
+    <img src="http://temple-rider.netlify.com/media/ColleyersDash.jpg" alt="dash">
+</div>
 
-    <div class="about homepage">
-        <h1>What is RoboCon</h1>
-        <p>I would like this page to serve the function of many pages on the current site, namely, the contact us, faq,
-            an events page (to let people know when techdays are etc), and home page, as well as providing links to the
-            pages that I have removed from the nav bar on the old side. This should act as a "portal to the rest of the
-            site and the nav bar quick access."</p>
-        <button class="button">Find out more!</button>
-    </div>
+<div class="sponsors homepage">
+    <h1>Sponsors</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam atque aut consequuntur
+        doloribus, ex incidunt inventore molestiae molestias odio quo quod repellat saepe temporibus!</p>
+</div>
 
-    <div class="dash homepage">
-        <img src="http://temple-rider.netlify.com/media/ColleyersDash.jpg" alt="dash">
-    </div>
+<div class="tshirt homepage">
+    <img src="http://temple-rider.netlify.com/media/BackOfATShirt.jpg" alt="back-off-a-T">
+    <button class="button">Find out more!</button>
+</div>
 
-    <div class="sponsors homepage">
-        <h1>Sponsors</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam atque aut consequuntur
-            doloribus, ex incidunt inventore molestiae molestias odio quo quod repellat saepe temporibus!</p>
-    </div>
-
-    <div class="tshirt homepage">
-        <img src="http://temple-rider.netlify.com/media/BackOfATShirt.jpg" alt="back-off-a-T">
-        <button class="button">Find out more!</button>
-    </div>
-
-    <div class="sign-up homepage">
-        <h1>Sign up</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, dolorem eius exercitationem facere,
-            illo inventore iste magnam molestias nobis nostrum numquam reprehenderit rerum voluptate? Fugit.</p>
-
-    </div>
-
-    <div class="death-kiss homepage">
-        <img src="http://temple-rider.netlify.com/media/PerseBotDeathKiss.jpg" alt="Death bot">
-        <button class="button">Find out more!</button>
-    </div>
-
-    <div class="faq homepage">
-        <h1>Frequently asked questions</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque laudantium nam nobis quisquam sunt? Ab, animi
-            architecto consequatur culpa distinctio dolorem et fugiat maxime, minima natus ratione recusandae tenetur,
-            totam! Amet animi consectetur consequuntur corporis culpa cumque, delectus deleniti deserunt distinctio
-            doloremque doloribus ea eligendi error est et expedita fuga, id in ipsa ipsum iusto laborum laudantium
-            maiores maxime minus modi obcaecati odio officia perferendis praesentium quibusdam totam ullam velit! Ab
-            corporis, deserunt dolores doloribus eveniet iusto minima odio porro quo tempora? Asperiores exercitationem
-            harum molestiae officia, rem reprehenderit temporibus voluptatibus? Aperiam cum, dicta eaque impedit
-            incidunt maxime molestias, neque odio optio perspiciatis qui, reprehenderit voluptas! Accusantium at commodi
-            culpa dignissimos, dolor eligendi explicabo ipsam iure magnam molestiae necessitatibus, nobis reprehenderit
-            sunt tenetur vitae voluptatem, voluptates voluptatum! Accusamus atque id iusto neque quod. Atque aut culpa
-            impedit ipsa temporibus! Assumenda deleniti illo incidunt laborum libero optio sit unde? Dignissimos iure
-            quasi quidem soluta ut. Adipisci aliquam amet, consectetur consequatur consequuntur corporis deleniti
-            dignissimos distinctio dolorem doloremque dolores dolorum eveniet, excepturi expedita facere hic ipsam
-            laudantium, libero magni maxime minima nam necessitatibus neque obcaecati odio omnis perferendis quisquam
-            quo quod sapiente similique sit sunt tempora tempore totam unde voluptates! Adipisci at blanditiis commodi
-            dolor dolores eius esse exercitationem fugit hic iure laboriosam laudantium, libero molestias odio omnis
-            pariatur perspiciatis, placeat possimus provident quas reprehenderit repudiandae saepe sed sequi similique
-            sint sit vel veniam veritatis voluptatum. Alias animi at beatae, commodi consequatur consequuntur culpa, cum
-            debitis dicta dignissimos doloribus enim excepturi expedita fuga id illum inventore nemo officia placeat rem
-            rerum sed similique sit sunt suscipit tenetur totam veritatis? Alias autem, consectetur consequatur deleniti
-            facilis minus mollitia necessitatibus nemo nihil possimus, recusandae repellat tempore voluptates! Excepturi
-            magnam modi quibusdam rem voluptate! Amet, autem earum est minus molestias perferendis placeat quod sint
-            voluptates.</p>
-    </div>
-
-    <div class="contact homepage">
-        <h1>Contact</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis nemo nesciunt quibusdam quos rem? A
-            atque deleniti deserunt enim esse expedita laboriosam laborum maxime molestias nemo officiis porro quam
-            quidem quo recusandae, reprehenderit vero? Corporis deleniti deserunt iste itaque quaerat, qui temporibus?
-            Ab alias animi doloremque fugit id laudantium sapiente ut veniam vitae voluptates. Aliquam aspernatur earum
-            ex laboriosam modi neque optio praesentium quae repudiandae sit temporibus, voluptatum? Architecto dicta
-            dolore eum, maiores minus recusandae reiciendis. Accusamus consequuntur doloribus eaque ex hic inventore,
-            laboriosam, laudantium numquam omnis optio pariatur, quis saepe sed tenetur vero. Animi autem ducimus
-            exercitationem incidunt optio quasi, qui quis unde. Commodi consequatur dolorum ducimus harum hic incidunt
-            laudantium nemo repellat sequi. Accusantium ad adipisci alias aperiam at cum, delectus doloremque eius eum
-            in iste itaque maxime necessitatibus nesciunt nisi nulla, odio perferendis porro quis sapiente sint unde ut
-            voluptate? Et inventore iusto labore perferendis recusandae sit. Aperiam beatae, corporis dignissimos eaque
-            esse eum iste, maiores, molestiae mollitia pariatur quae quas saepe sapiente sed sit totam unde veniam.
-            Alias cupiditate dolor minus necessitatibus quas quasi quia quisquam reprehenderit. A adipisci dolorem ea
-            eligendi hic itaque laborum minima placeat, quae quaerat soluta sunt veritatis vero! Aperiam, aut sed!</p>
-    </div>
-
+<div class="sign-up homepage">
+    <h1>Sign up</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, dolorem eius exercitationem facere,
+        illo inventore iste magnam molestias nobis nostrum numquam reprehenderit rerum voluptate? Fugit.</p>
 
 </div>
+
+<div class="death-kiss homepage">
+    <img src="http://temple-rider.netlify.com/media/PerseBotDeathKiss.jpg" alt="Death bot">
+    <button class="button">Find out more!</button>
+</div>
+
+<div class="faq homepage">
+    <h1>Frequently asked questions</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque laudantium nam nobis quisquam sunt? Ab, animi
+        architecto consequatur culpa distinctio dolorem et fugiat maxime, minima natus ratione recusandae tenetur,
+        totam! Amet animi consectetur consequuntur corporis culpa cumque, delectus deleniti deserunt distinctio
+        doloremque doloribus ea eligendi error est et expedita fuga, id in ipsa ipsum iusto laborum laudantium
+        maiores maxime minus modi obcaecati odio officia perferendis praesentium quibusdam totam ullam velit! Ab
+        corporis, deserunt dolores doloribus eveniet iusto minima odio porro quo tempora? Asperiores exercitationem
+        harum molestiae officia, rem reprehenderit temporibus voluptatibus? Aperiam cum, dicta eaque impedit
+        incidunt maxime molestias, neque odio optio perspiciatis qui, reprehenderit voluptas! Accusantium at commodi
+        culpa dignissimos, dolor eligendi explicabo ipsam iure magnam molestiae necessitatibus, nobis reprehenderit
+        sunt tenetur vitae voluptatem, voluptates voluptatum! Accusamus atque id iusto neque quod. Atque aut culpa
+        impedit ipsa temporibus! Assumenda deleniti illo incidunt laborum libero optio sit unde? Dignissimos iure
+        quasi quidem soluta ut. Adipisci aliquam amet, consectetur consequatur consequuntur corporis deleniti
+        dignissimos distinctio dolorem doloremque dolores dolorum eveniet, excepturi expedita facere hic ipsam
+        laudantium, libero magni maxime minima nam necessitatibus neque obcaecati odio omnis perferendis quisquam
+        quo quod sapiente similique sit sunt tempora tempore totam unde voluptates! Adipisci at blanditiis commodi
+        dolor dolores eius esse exercitationem fugit hic iure laboriosam laudantium, libero molestias odio omnis
+        pariatur perspiciatis, placeat possimus provident quas reprehenderit repudiandae saepe sed sequi similique
+        sint sit vel veniam veritatis voluptatum. Alias animi at beatae, commodi consequatur consequuntur culpa, cum
+        debitis dicta dignissimos doloribus enim excepturi expedita fuga id illum inventore nemo officia placeat rem
+        rerum sed similique sit sunt suscipit tenetur totam veritatis? Alias autem, consectetur consequatur deleniti
+        facilis minus mollitia necessitatibus nemo nihil possimus, recusandae repellat tempore voluptates! Excepturi
+        magnam modi quibusdam rem voluptate! Amet, autem earum est minus molestias perferendis placeat quod sint
+        voluptates.</p>
+</div>
+
+<div class="contact homepage">
+    <h1>Contact</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis nemo nesciunt quibusdam quos rem? A
+        atque deleniti deserunt enim esse expedita laboriosam laborum maxime molestias nemo officiis porro quam
+        quidem quo recusandae, reprehenderit vero? Corporis deleniti deserunt iste itaque quaerat, qui temporibus?
+        Ab alias animi doloremque fugit id laudantium sapiente ut veniam vitae voluptates. Aliquam aspernatur earum
+        ex laboriosam modi neque optio praesentium quae repudiandae sit temporibus, voluptatum? Architecto dicta
+        dolore eum, maiores minus recusandae reiciendis. Accusamus consequuntur doloribus eaque ex hic inventore,
+        laboriosam, laudantium numquam omnis optio pariatur, quis saepe sed tenetur vero. Animi autem ducimus
+        exercitationem incidunt optio quasi, qui quis unde. Commodi consequatur dolorum ducimus harum hic incidunt
+        laudantium nemo repellat sequi. Accusantium ad adipisci alias aperiam at cum, delectus doloremque eius eum
+        in iste itaque maxime necessitatibus nesciunt nisi nulla, odio perferendis porro quis sapiente sint unde ut
+        voluptate? Et inventore iusto labore perferendis recusandae sit. Aperiam beatae, corporis dignissimos eaque
+        esse eum iste, maiores, molestiae mollitia pariatur quae quas saepe sapiente sed sit totam unde veniam.
+        Alias cupiditate dolor minus necessitatibus quas quasi quia quisquam reprehenderit. A adipisci dolorem ea
+        eligendi hic itaque laborum minima placeat, quae quaerat soluta sunt veritatis vero! Aperiam, aut sed!</p>
+</div>
+
 
 {{ end }}
