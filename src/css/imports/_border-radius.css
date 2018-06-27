@@ -2,9 +2,7 @@
 
 .br1 {        border-radius: var(--border-radius); }
 
-.br2 {        border-radius: var(--circle-radius); }
-
-.br-50 { border-radius: 50%; }
+.br-100 {     border-radius: 100%; }
 
 .br-pill {    border-radius: 9999px; }
 
